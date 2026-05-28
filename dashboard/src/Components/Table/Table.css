@@ -1,0 +1,121 @@
+/* ==================== MAIN CONTAINER ==================== */
+.tableContainer {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.tableHeader {
+    margin-bottom: 1.2rem;
+    padding: 0 0.5rem;
+}
+
+.tableTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color, #333);
+}
+
+/* ==================== TABLE PAPER ==================== */
+.tablePaper {
+    border-radius: 12px !important;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08) !important;
+    overflow: hidden;                    /* Changed */
+    width: 100%;
+}
+
+/* ==================== TABLE ==================== */
+table {
+    width: 100%;
+    min-width: 650px;       /* Keep this for large content */
+}
+
+/* ==================== TABLE ROWS & CELLS ==================== */
+.tableRow {
+    transition: all 0.2s ease;
+}
+
+.tableRow:hover {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.tableCell {
+    padding: 16px 18px !important;
+    font-size: 14.5px;
+    color: #555;
+    white-space: nowrap;           /* Prevents text wrapping */
+}
+
+.tableCell:first-of-type {
+    font-weight: 500;
+    color: #333;
+}
+
+/* ==================== STATUS ==================== */
+.status {
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    min-width: 85px;
+}
+
+/* ==================== DETAILS ==================== */
+.Details {
+    color: #00b5ff !important;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.Details:hover {
+    color: #0077b3 !important;
+    text-decoration: underline;
+}
+
+/* ==================== RESPONSIVE BEHAVIOR ==================== */
+
+/* Desktop & Large Screens - No Horizontal Scroll */
+@media (min-width: 769px) {
+    .tablePaper {
+        overflow: visible !important;     /* No scrollbar on desktop */
+    }
+    
+    table {
+        width: 100%;
+        table-layout: fixed;              /* Better column distribution */
+    }
+    
+    .tableCell {
+        white-space: normal;              /* Allow wrapping if needed */
+        word-break: break-word;
+    }
+}
+
+/* Mobile - Allow Horizontal Scroll */
+@media (max-width: 768px) {
+    .tablePaper {
+        overflow-x: auto !important;      /* Scroll only on mobile */
+    }
+    
+    .tableCell {
+        padding: 14px 12px !important;
+        font-size: 14px;
+    }
+}
+
+/* Table Header Styling */
+.MuiTableCell-head {
+    font-weight: 600 !important;
+    background-color: #f8f9fa;
+    color: #444 !important;
+}
+
+/* Remove heavy borders */
+.MuiTableCell-root {
+    border-bottom: 1px solid rgba(224, 224, 224, 0.6) !important;
+}
+
+.tableRow:last-child .MuiTableCell-root {
+    border-bottom: none !important;
+}

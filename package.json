@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@iconscout/react-unicons": "^2.2.5"
+    "@iconscout/react-unicons": "^2.2.5",
+    "react-circular-progressbar": "^2.2.0"
   }
 }
