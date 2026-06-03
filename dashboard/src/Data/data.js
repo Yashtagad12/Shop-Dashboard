@@ -81,3 +81,24 @@ export const CardsData = [
         ],
     },
 ];
+
+export const UpdatesData = [
+    {
+        img: "https://bebopbusiness.no/wp-content/uploads/2016/12/spearker_1-300x300.jpg",
+        name: "Andrew Thomas",
+        noti: "has ordered Apple smart watch 2500mh battery.",
+        time: "25 seconds ago",
+    },
+    {
+        img: "https://bebopbusiness.no/wp-content/uploads/2016/12/spearker_1-300x300.jpg", // ← Added
+        name: "James Bond",
+        noti: "has received Samsung gadget for charging battery.",  // ← Added
+        time: "30 minutes ago",  // ← Added
+    },
+    {
+        img: "https://bebopbusiness.no/wp-content/uploads/2016/12/spearker_1-300x300.jpg", // ← Added
+        name: "Iron Man",
+        noti: "has ordered Apple smart watch, Samsung Gear 2500mh battery.",  // ← Added
+        time: "2 hours ago",  // ← Added
+    },
+];
