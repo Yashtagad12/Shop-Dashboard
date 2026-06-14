@@ -10,7 +10,7 @@ const RightSide = () => {
         <h3>Updates</h3>
         <Updates />
       </div>
-      <div>
+      <div className="graph">
         <h3>Customer Review</h3>
         <CustomerReview />
       </div>

@@ -28,7 +28,8 @@
 }
 
 .AppGlass {
-  display: grid;
+  display: flex;
+  flex-direction: row;
   height: 97%;
   width: 97%;
   background: var(--glass);
@@ -47,6 +48,10 @@
 
 @media screen and (max-width: 768px) {
   .AppGlass{
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;      /* Sidebar on top, content below */
+        gap: 1.5rem;
+        padding: 1rem 0.5rem;
+        min-height: 100vh;
   } 
 }

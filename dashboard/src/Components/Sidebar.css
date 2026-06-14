@@ -110,6 +110,8 @@
     padding:10px;
     border-radius: 10px;
     z-index: 10;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
   }
   .close{
     left: -60%;
