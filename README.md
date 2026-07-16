@@ -1,6 +1,6 @@
 # 🛍️ Shops Dashboard — Admin Panel
 
-![Shops Dashboard logo](./dashboard/src/imgs/logo.png)
+![Shops Dashboard logo](./dashboard/src/imgs/logo-1.png)
 
 **A modern, clean, and fully responsive admin dashboard built with React**
 
@@ -65,8 +65,8 @@ The current build focuses on the **Dashboard** view: styled sales/revenue/expens
 
 ![Dashboard Page](./dashboard/src/imgs/dashboard.png)
 ![Dashboard Chart 1](./dashboard/src/imgs/dashboard-1.png)
-![Dashboard Chart 2 (mobile width)](./dashboard/src/imgs/dashboard-2.png)
-![Dashboard chart 3 (tablet width)](./dashboard/src/imgs/dashboard-3.png)
+![Dashboard chart 2 (tablet width)](./dashboard/src/imgs/dashboard-3.png)
+![Dashboard Chart 3 (mobile width)](./dashboard/src/imgs/dashboard-2.png)
 
 _(Dashboard screenshot — summary cards, recent orders, updates feed, and customer review chart)_
 
