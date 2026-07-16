@@ -1,0 +1,46 @@
+.RightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 1rem; */
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.graph {
+    width: 80%;
+    padding: 15px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .RightSide{
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .RightSide{
+        width: 100%;
+        margin-top: 20px;
+        flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;     /* Changed from center */
+    align-items: center;
+    }
+    .RightSide > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        /* Vertical centering */             /* Full screen height */
+        padding: 15px;
+        text-align: center;             /* Center text */
+        margin: 0 auto;                 /* Horizontal centering */
+        width: 100%;
+        max-width: 420px;               /* Optional: limits max width */
+    }
+}
